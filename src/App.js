@@ -1,13 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-
+import ExpenseItem from './components/ExpenseItem'
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header"> */}
-          {/* Learn React  
-      </header> */}
-      
+      <header className="App-header">
+          * Learn React  
+      </header> 
+      <ExpenseItem/>
     </div>
   );
 }
