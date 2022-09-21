@@ -1,7 +1,7 @@
 import Expenses from "./components/Expenses";
 
 function App(props) {
-  const expense =[
+  const expenses =[
     {
       id:'e1',
        title:'Toilet Paper', 
@@ -28,11 +28,9 @@ function App(props) {
     },
   ]
   return (
-    <div className="App">
-      <header className="App-header">
-          * Learn React  
-      </header> 
-      <Expenses items={expense}/>
+    <div >
+          <h2>* Learn React  </h2>
+      <Expenses items={expenses}/>
     </div>
   );
 }
