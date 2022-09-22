@@ -8,22 +8,18 @@ function ExpenseItem(props){
     // const expenseAmount = 294.67
 
 
-    return(
+    return (
     <Card className='expense-item'>
         <ExpenseDate date={props.date}/>
-
         <div className='expense-item__description'>
-            <h2>{props.title}</h2>
-            {/* <h2>{expenseTitle}</h2> */}
-
-        <div className='expense-item__price'>
-
-           {/* ${expenseAmount} */}
-             ${props.amount}
+                <h2>{props.title}</h2>
+            <div className='expense-item__price'>
+                ${props.amount}
             </div>
         </div>
+        <button>Change Title</button>
     </Card>
-    )
+    );
 }
 
 export default ExpenseItem;

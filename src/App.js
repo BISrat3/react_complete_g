@@ -1,8 +1,8 @@
 import React from "react";
 import Expenses from "./components/Expenses/Expenses";
 
-function App(props) {
-  const expenses =[
+function App() {
+  const expenses = [
     {
       id:'e1',
        title:'Toilet Paper', 
