@@ -2,41 +2,47 @@ import './ExpenseForm.css'
 import { useState } from 'react';
 
 const ExpenseForm = () =>{
-    // const [enteredTitle, setEnteredTitle] = useState('');
-    // const [enteredAmount, setEnteredAmount] = useState('');
-    // const [enteredDate, setEnteredDate] = useState('');
+    const [enteredTitle, setEnteredTitle] = useState('');
+    const [enteredAmount, setEnteredAmount] = useState('');
+    const [enteredDate, setEnteredDate] = useState('');
 
-    const [userInput, setUserInput] = useState({
-        enteredTitle: '',
-        enteredAmount: '',
-        enteredDate: '',
-    });
+    // we can use this alternative approach also
+    // const [userInput, setUserInput] = useState({
+    //     enteredTitle: '',
+    //     enteredAmount: '',
+    //     enteredDate: '',
+    // });
 
     const titleChangeHandler = (event)=>{    
         // console.log(event.target.value);
-        // setEnteredTitle(event.target.value); or 
-        setUserInput({
-            ...userInput,
-            enteredTitle: event.target.value,
-        })
+        setEnteredTitle(event.target.value); or 
+        // setUserInput({
+        //     ...userInput,
+        //     enteredTitle: event.target.value,
+        // })
+        // if the state update depends on the previous state of the variable => or
+        // setUserInput((prevState) =>{
+        //     return { ...prevState, enteredTitle: event.target.value}
+        // })
+
     };
 
     const amountChangeHandler = (event)=>{    
         // // console.log(event.target.value);
-        // setEnteredAmount(event.target.value);
-        setUserInput({
-            ...userInput,
-            enteredAmount: event.target.value,
-        })
+        setEnteredAmount(event.target.value);
+        // setUserInput({
+        //     ...userInput,
+        //     enteredAmount: event.target.value,
+        // })
     };
 
     const dateChangeHandler = (event)=>{    
         // console.log(event.target.value);
-        // setEnteredDate(event.target.value);
-        setUserInput({
-            ...userInput,
-            enteredDate: event.target.value,
-        })
+        setEnteredDate(event.target.value);
+        // setUserInput({
+        //     ...userInput,
+        //     enteredDate: event.target.value,
+        // })
     };
 
     return (
