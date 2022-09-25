@@ -15,7 +15,8 @@ const ExpenseForm = (props) =>{
 
     const titleChangeHandler = (event)=>{    
         // console.log(event.target.value);
-        setEnteredTitle(event.target.value); or 
+        setEnteredTitle(event.target.value);
+        // or
         // setUserInput({
         //     ...userInput,
         //     enteredTitle: event.target.value,
