@@ -3,6 +3,8 @@ import {useState} from "react"
 import './Expenses.css'
 import Card from "../UI/Card";
 import ExpensesFilter from "../NewExpense/ExpenseFilter";
+import ExpensesList from "./ExpensesList";
+import ExpensesList from "./ExpensesList";
 
 function Expenses(props) {
   const [filteredYear, setFilteredYear] = useState('2020')
@@ -21,7 +23,7 @@ function Expenses(props) {
         selected ={filteredYear}
         onChangeFilter={filterChangeHandler}
         />
-        {expensesContent}
+        <ExpensesList items = {filteredExpenses}/>
         {/* The second approach */}
         {/* {
           filteredExpenses.length === 0 ? (<p>No Expense Found.</p> )
