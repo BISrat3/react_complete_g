@@ -12,6 +12,17 @@ function Expenses(props) {
     setFilteredYear(selectedYear)
   }
 
+  // another approach is that to render the filter components 
+  let expensesContent = <p>No Expense Found.</p>
+
+  if (filteredExpenses.length > 0){
+    expensesContent = filteredExpenses.map((expense)=> (
+  <ExpenseItem 
+    key = {expense.id}
+    title= {expense.title}
+    amount = {expense.amount}
+  date = {expense.date}  />
+    ))}
   return (
     <div>
     <Card className="expenses">
@@ -19,14 +30,19 @@ function Expenses(props) {
         selected ={filteredYear}
         onChangeFilter={filterChangeHandler}
         />
-      {props.items.map((expense)=>{
+        {/* The second approach */}
+        {/* {
+          filteredExpenses.length === 0 ? (<p>No Expense Found.</p> )
+         : (
+        filteredExpenses.map((expense)=> (
         <ExpenseItem 
         key = {expense.id}
         title= {expense.title}
         amount = {expense.amount}
         date = {expense.date}
         />     
-      })}
+      ))
+        )} */}
       {/* <ExpenseItem
         title={props.items[0].title}
         amount={props.items[0].amount}
