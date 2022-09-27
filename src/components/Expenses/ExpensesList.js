@@ -1,4 +1,5 @@
 import ExpenseItem from "./ExpenseItem";
+import './ExpensesList.css'
 
 const ExpensesList  = (props) =>{
     // let expensesContent = <p>No Expense Found.</p>
@@ -8,13 +9,14 @@ const ExpensesList  = (props) =>{
     }
     return (
         <ul className="expenses-list">
-            {props.itmes.map((expense)=> (
+            {props.items.map((expense)=> (
             <ExpenseItem 
                 key = {expense.id}
                 title= {expense.title}
                 amount = {expense.amount}
-                date = {expense.date}  />
-        ))}
+                date = {expense.date}  
+                />
+             ))}
         </ul>
     )
 }
