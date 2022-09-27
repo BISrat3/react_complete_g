@@ -1,7 +1,7 @@
 import ExpenseItem from "./ExpenseItem";
 
 const ExpensesList  = (props) =>{
-    let expensesContent = <p>No Expense Found.</p>
+    // let expensesContent = <p>No Expense Found.</p>
 
     if (props.items.length === 0){
         return 
