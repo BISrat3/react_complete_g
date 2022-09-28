@@ -1,7 +1,7 @@
 import {useState} from "react"
 import './Expenses.css'
 import Card from "../UI/Card";
-import ExpensesFilter from "./ExpenseFilter";
+import ExpensesFilter from "./ExpensesFilter";
 import ExpensesList from "./ExpensesList";
 import ExpensesChart from "./ExpensesChart";
 
@@ -29,7 +29,15 @@ function Expenses(props) {
           />
           <ExpensesChart expenses={filteredExpenses} />
           <ExpensesList items = {filteredExpenses}/>
-          {/* The second approach */}
+         
+      </Card>
+    </div>
+  );
+}
+export default Expenses;
+
+
+ {/* The second approach */}
           {/* {
             filteredExpenses.length === 0 ? (<p>No Expense Found.</p> )
           : (
@@ -62,8 +70,3 @@ function Expenses(props) {
           amount={props.items[3].amount}
           date={props.items[3].date}
         /> */}
-      </Card>
-    </div>
-  );
-}
-export default Expenses;
