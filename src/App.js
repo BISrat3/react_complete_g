@@ -1,4 +1,4 @@
-import React, {useState}from "react";
+import React, {useState} from "react";
 
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
@@ -7,9 +7,9 @@ import NewExpense from "./components/NewExpense/NewExpense";
 const Dummy_Expenses = [
   {
     id: 'e1',
-     title: 'Toilet Paper', 
-     amount: 24.67, 
-     date: new Date(2022, 3, 12),
+    title: 'Toilet Paper', 
+    amount: 24.67, 
+    date: new Date(2022, 3, 12),
   },
   {
     id: 'e2', 

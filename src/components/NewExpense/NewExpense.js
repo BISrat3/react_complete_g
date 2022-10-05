@@ -12,10 +12,10 @@ const NewExpense = (props) => {
         }
         // console.log(expenseData)
         props.onAddExpense(expenseData)
-        setIsEditng(true)
+        setIsEditng(false)
     }
 
-    const startEditingHandler =() =>{
+    const startEditingHandler = () =>{
         setIsEditng(true);
     }
 
