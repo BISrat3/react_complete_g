@@ -1,5 +1,5 @@
 import './ExpenseForm.css'
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 const ExpenseForm = (props) =>{
     const [enteredTitle, setEnteredTitle] = useState('');
@@ -68,7 +68,7 @@ const ExpenseForm = (props) =>{
                 <label>
                     Title
                 </label>
-                <input type="text" 
+                <input type='text' 
                     onChange={titleChangeHandler} 
                     value={enteredTitle}/>
             </div>
@@ -88,7 +88,7 @@ const ExpenseForm = (props) =>{
                     Date
                 </label>
                 <input 
-                    type="date" 
+                    type='date' 
                     min="2019-01-12" 
                     max="2023-12-31" 
                     value={enteredDate}
@@ -96,11 +96,11 @@ const ExpenseForm = (props) =>{
                     />
             </div>
         </div>
-        <div className='"new-expense__actions'>
+        <div className='new-expense__actions'>
             <button type="button" onClick={props.onCancel}>
                 Cancel
             </button>
-            <button type="submit" >Add Expense</button>
+            <button type='submit' >Add Expense</button>
         </div>
     </form>
     )
