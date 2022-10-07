@@ -9,13 +9,13 @@ const Dummy_Expenses = [
     id: 'e1',
     title: 'Toilet Paper', 
     amount: 24.67, 
-    date: new Date(2022, 3, 12),
+    date: new Date(2021, 3, 12),
   },
   {
     id: 'e2', 
     title: 'Car Insurance', 
     amount: 294.67, 
-    date: new Date(2022, 4, 14),
+    date: new Date(2021, 4, 14),
   }, 
   {
   id: 'e3', 
@@ -24,9 +24,9 @@ const Dummy_Expenses = [
   date: new Date(2022, 3,1),
   },
   {
-    id:'e4', 
-    title:'Monitor', 
-    amount:200, 
+    id: 'e4', 
+    title: 'Monitor', 
+    amount: 200, 
     date: new Date(2022, 2, 12),
   },
 ]
